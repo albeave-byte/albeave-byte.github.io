@@ -1,0 +1,19 @@
+<!DOCKTYPE html>
+<html>
+  <head>
+    <title>Which guitar is right for me?</title>
+  </head>
+  <body>
+    <h1>Which type of guitar should I choose?</h1>
+    <h2>Acoustic Guitar</h2>  
+    <p>Acoustic guitars are perfect for beginners. Although they take lots of practice to master, there are alot of simple songs with just a few chords that you can strum for your friends around the campfire. They will love it!
+    </p>
+    <h2>Eletric Guitar</h2>
+    <p>Eletric Guitars are for the metal heads. If your favorite thing is to play air guitar to Guns n' Roses, eletric guitar is right for you.
+    </p>
+    <h2>Bass Guitar</h2>
+    <p> Bass guitar is for the background guys. If you love the deep undertone of your favorite Jazz songs or the popular pop song, Bass is your jam.
+    </p>
+    <p><a href="Stringnews.html">Return to Guitar Strummers page</a></p>
+  </body>
+</html> 
