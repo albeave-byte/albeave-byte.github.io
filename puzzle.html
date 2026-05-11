@@ -1,0 +1,42 @@
+<!DOCKTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Fishy Puzzle</title>
+    <style>
+      .container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+        width:600px;
+  }
+.flex-item {
+    flex: 1;
+    text-align: center;
+    background-color: plum;
+    margin: 5px;
+    padding: 5px;
+  }
+      section.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+</style>
+<section class="grid-container">
+  <div class="grid-item">1</div>
+  <img src="pictures/fish1">
+   <img src="pictures/fish2">
+   <img src="pictures/fish3">
+   <img src="pictures/fish4">
+   <img src="pictures/fish5">
+   <img src="pictures/fish6">
+   <img src="pictures/fish7">
+   <img src="pictures/fish8">
+   <img src="pictures/fish9">
+   <img src="pictures/fish10" class="hidden-image">
+</section>
+  </head>
