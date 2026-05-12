@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imitations</title>
+    <style>
+        .invert {
+            filter: invert(1);
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .hue-rotate {
+            filter: hue-rotate(90deg);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .gradient {
+            width: 300px;
+            height: 200px;
+            background-image: linear-gradient(to right, red, yellow);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .sepia {
+            filter: sepia(1);
+            border-radius: 50%;
+        }
+        .border-image {
+            border: 5px solid transparent;
+            background-clip: border-box;
+            -webkit-mask-image: url('border.png');
+            mask-image: url('border.png');
+            filter: grayscale(1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="pictures/butterfly.jpg" alt="Inverted Image" class="invert">
+    <img src="pictures/dinosaur.png" alt="Hue-Rotated Image" class="hue-rotate">
+    <div class="pictures/football_field.jpg"></div>
+    <img src="pictures/penguins.jpg" alt="Sepia Rounded Image" class="sepia">
+    <div class="pictures/tic-tac-toe.png" style="width: 200px; height: 200px;"></div>
+</body>
+</html>
