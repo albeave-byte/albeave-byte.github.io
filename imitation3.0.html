@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imitations</title>
     <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
         .invert {
             filter: invert(1);
             border-top-left-radius: 15px;
@@ -27,21 +31,45 @@
         .border-image {
             border: 5px solid transparent;
             background-clip: border-box;
-            -webkit-mask-image: url('pictures/tic-tac-toe.png');
-            mask-image: url('pictures/football_field.jpg');
+            -webkit-mask-image: url("pictures/football_field.jpg");
+            mask-image: url("pictures/tic-tac-toe.png");
             filter: grayscale(1);
         }
-        img {
-            max-width: 100%;
-            height: auto;
+       .presenting-text {
+           position: absolute;
+           top: 20px;
+           left: 20px;
+           color: white;
+           font-size: 24px;
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+       } 
+        .blur-image {
+            filter:blur(5px);
         }
     </style>
 </head>
 <body>
+    <div class='image-container'>
     <img src="pictures/butterfly.jpg" alt="Inverted Image" class="invert">
+    </div>
+    <div class='image-container'>
     <img src="pictures/dinosaur.png" alt="Hue-Rotated Image" class="hue-rotate">
-    <div class="hue-rotate"></div>
+    </div>
+    <div class='image-container'
+        style='width:300px; height:200px;' class='gradient'>
+    <img src="pictures/seagull.png" alt="Gradient" class="gradient">
+    </div>
+    <div class='image-container'>
     <img src="pictures/penguins.jpg" alt="Sepia Rounded Image" class="sepia">
-    <div class="sepia" style="width: 200px; height: 200px;"></div>
+    </div>
+    <div class='image-container'>
+        <img src="pictures/football_field.jpg"
+            class="border-image" alt="border image">
+    </div>
+    <div class="image-container">
+    <img src="pictures/theater_stage.jpg"
+        class="blur-image" alt="Blur Image">
+        <div class="presenting-text">Presenting</div>
+    </div>
 </body>
 </html>
